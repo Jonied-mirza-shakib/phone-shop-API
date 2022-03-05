@@ -1,0 +1,58 @@
+body{
+    background-color: #758283 !important;
+}
+#heading-tag{
+    color: azure;
+    text-transform: uppercase;
+}
+#input-field{
+    outline-color: brown;
+    border: 3px solid brown;
+}
+#button-addon2{
+    background-color: brown;
+    color: white;
+    font-size: 25px;
+}
+#phone-details-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+#spinner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    display: none;
+}
+#error-message-one{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+#error-message-two{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+
+.carousel-inner .carousel-item img{
+    width: 100%;
+    height: 50% !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    #phone-details-section{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 20px;
+    }
+}
+@media screen and (min-width: 992px) {
+    #phone-details-section{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

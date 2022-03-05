@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading-tag" class="text-center mt-5 mb-5">Phone Shop</h1>
+        <!-- carousel section  -->
+        <div id="carouselExampleIndicators" class="carousel slide mb-5 pb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/iphone2_ccexpress.jpeg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/iphone3_ccexpress.jpeg" class="d-block" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- end carousel section -->
+        <!-- input section  -->
+        <section>
+            <div id="input-section" class="text-center">
+                <div class="input-group mb-3 w-50 mx-auto">
+                    <input id="input-field" type="text" class="form-control" placeholder="Search your Phone"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn" type="button" id="button-addon2" onclick="searchPhone()">click</button>
+                </div>
+            </div>
+        </section>
+        <!-- end input section  -->
+        <!-- show spinner section  -->
+        <section id="spinner">
+            <button class="btn btn-primary type=" button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+            </button>
+        </section>
+        <!-- end spinner section  -->
+        <!-- show phone details -->
+        <section>
+            <div id="show-phone-details">
+
+            </div>
+        </section>
+        <!-- end show phone details  -->
+        <!-- phone details section  -->
+        <section>
+            <div id="phone-details-section">
+
+            </div>
+        </section>
+        <!-- end phone details section  -->
+        <!-- error message show  -->
+        <section>
+            <p id="error-message-one"></p>
+        </section>
+        <section>
+            <p id="error-message-two"></p>
+        </section>
+        <!-- end error message  -->
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
